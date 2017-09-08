@@ -14,7 +14,7 @@ public class MobileBillEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private String id;
+	private int id;
 
 	@Column(name="actual_fee")
 	private int actualFee;
@@ -77,13 +77,16 @@ public class MobileBillEntity implements Serializable {
 	public MobileBillEntity() {
 	}
 
-	public String getId() {
-		return this.id;
+
+	public int getId() {
+		return id;
 	}
 
-	public void setId(String id) {
+
+	public void setId(int id) {
 		this.id = id;
 	}
+
 
 	public int getActualFee() {
 		return this.actualFee;

@@ -14,7 +14,7 @@ public class MobileCallEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private String id;
+	private int id;
 
 	private String billmonth;
 
@@ -33,13 +33,16 @@ public class MobileCallEntity implements Serializable {
 	public MobileCallEntity() {
 	}
 
-	public String getId() {
-		return this.id;
+
+	public int getId() {
+		return id;
 	}
 
-	public void setId(String id) {
+
+	public void setId(int id) {
 		this.id = id;
 	}
+
 
 	public String getBillmonth() {
 		return this.billmonth;
